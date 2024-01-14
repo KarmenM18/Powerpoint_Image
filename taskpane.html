@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SheHacks</title>
+
+    <!--Include the Office Javascript API library into this file-->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+
+    <!--Include file containing main add-in functionality-->
+    <script type="text/javascript" src="app.js"></script>
+
+    <!--Display webcam feed-->
+    <video id="webcam" autoplay playsinline width="640" height="480"></video>
+    
+    <canvas id="canvas" class="d-none"></canvas>
+
+    <!--Play sound when picture is taken-->
+    <audio id="snapSound" src="audio/snap.wav" preload="auto"></audio>
+</head>
+
+<body>
+    <h1>SheHacks Microsoft Add-In</h1>
+    <button id="takePicture">Take Picture</button>
+    <!--Capture image, which is initially hidden-->
+    <img id="capturedImage" style="display: none;">
+</body>
+
+</html>
