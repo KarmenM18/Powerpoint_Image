@@ -1,6 +1,6 @@
 // reference: https://github.com/bensonruan/webcam-easy
 
-import Webcam from 'webcam-easy';
+//import Webcam from 'webcam-easy';
 
 // Declare constants using webcam-easy library to interact with webcam
 const webcamElement = document.getElementById('webcam');
@@ -9,7 +9,6 @@ const snapSoundElement = document.getElementById('snapSound');
 const webcam = new Webcam(webcamElement, 'user', canvasElement, snapSoundElement);
 
 var globalImage = new Image();
-globalImage.src =
 
   // Callback check to ensure that add-in code runs in sync with Powerpoint application's state
   Office.onReady(function (info) {
